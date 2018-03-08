@@ -1,0 +1,45 @@
+{
+    "title": "Change Opt+PgUp/Opt+PgDn to Volume Up/Down",
+    "rules": [
+        {
+            "description": "Change Opt+PgUp/Opt+PgDn to Volume Up/Down",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_up",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_increment"
+                        }
+                    ]
+                },
+
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_down",
+                        "modifiers": {
+                            "mandatory": [
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_decrement"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+

@@ -1,0 +1,29 @@
+{
+    "title": "Change PrintScreen to Mission Control",
+    "rules": [
+        {
+            "description": "Change PrintScreen to Mission Control",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "print_screen",
+                        "modifiers": {
+                            "optional": [
+                                "command",
+                                "option"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "mission_control"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
